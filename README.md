@@ -5,7 +5,7 @@
 
 There are a looooooot of awesome tutorials about
 [MNIST database](http://yann.lecun.com/exdb/mnist/),
-so my plan is to put some of these tutorials here,
+so my plan is to put some of these tutorials together,
 envolving from a very simple model to a nice model that achieves
 99% accuracy in the test data.  
 
@@ -47,6 +47,8 @@ The data consists of:
 To run this just run: `jupyter notebook`
 
 ## References
+
+Thank you!
 
 0. [TF and DL without a Phd by Martin Gorner, Google](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0)  
 1. [Classifying Handwritten Digits with TF.Learn, by Josh Gordon](https://www.youtube.com/watch?v=Gj0iyo265bc&list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal&index=1)  
