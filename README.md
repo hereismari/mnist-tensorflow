@@ -40,7 +40,10 @@ For this examples the train data consists of 2000 points and the test data consi
 
 ## Let's do it!
 
-To follow the "tutorials", just run: `jupyter notebook`
+To follow the "tutorials", just run: `jupyter notebook`.  
+
+If you want to check the code, just run manually `python <file name>.py`, also
+if you want to check TensorBoard you can! Just run `tensorboard --logdir=/tmp/tensorflow_log`
 
 ## References
 
