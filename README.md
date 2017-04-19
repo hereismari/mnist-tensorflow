@@ -56,3 +56,5 @@ Thank you!
 3. [TensorFlow Tutorials, by Hvass Labs ](https://github.com/Hvass-Labs/TensorFlow-Tutorials)
 4. [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/)
 5. [Getting_started with TensorFlow](https://www.tensorflow.org/get_started/get_started)
+6. [Not another mnist tutorial with tensorflow](https://www.oreilly.com/learning/not-another-mnist-tutorial-with-tensorflow)
+7. [Training convolutional neural network for image classification](http://cv-tricks.com/tensorflow-tutorial/training-convolutional-neural-network-for-image-classification/)

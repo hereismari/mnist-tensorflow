@@ -7,7 +7,6 @@ from tensorflow.examples.tutorials.mnist import input_data
 
 logs_path = '/tmp/tensorflow_logs/mnist'
 
-# one_hot=True: flatten this array into a vector of 28x28 = 784 numbers
 # mnist.train = 55,000 input data
 # mnist.test = 10,000 input data
 # mnist.validate = 5,000 input data

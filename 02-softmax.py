@@ -5,17 +5,10 @@ from tensorflow.examples.tutorials.mnist import input_data
 
 logs_path = '/tmp/tensorflow_logs/softmax'
 
-# one_hot=True: flatten this array into a vector of 28x28 = 784 numbers
 # mnist.train = 55,000 input data
 # mnist.test = 10,000 input data
 # mnist.validate = 5,000 input data
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
-
-# to make it simpler let's limit the train and test data set
-# train: 2000 input data
-# test: 500 input data
-train_x, train_y = mnist.train.next_batch(2000)
-test_x, test_y = mnist.test.next_batch(500)
 
 # one test data at a time
 x = tf.placeholder(tf.float32, [None, 784], name='input_data')
@@ -54,6 +47,10 @@ tf.summary.scalar("accuracy", accuracy)
 # Merge all summaries into a single op
 merged_summary_op = tf.summary.merge_all()
 
+# sg, if we use all the data the trainning will take a lot of time
+batch_size = 128
+num_steps = 1000
+
 # init
 init = tf.global_variables_initializer()
 
@@ -64,14 +61,17 @@ with tf.Session() as session:
                                            graph=tf.get_default_graph())
 
     # training
-    for i in xrange(1000):
+    for i in xrange(num_steps):
+        # Generate a minibatch.
+        batch_data, batch_labels = mnist.train.next_batch(batch_size)
         error, ts, acc, summary = session.run([loss, train_step, accuracy,
                                                merged_summary_op],
-                                              feed_dict={x: train_x,
-                                                         y_: train_y})
+                                              feed_dict={x: batch_data,
+                                                         y_: batch_labels})
         summary_writer.add_summary(summary, i)
 
     # running evaluation
-    acc = accuracy.eval(feed_dict={x: test_x, y_: test_y})
+    acc = accuracy.eval(feed_dict={x: mnist.test.images,
+                                   y_: mnist.test.labels})
     print 'Done!'
     print 'Accuracy:', acc * 100, '%'
