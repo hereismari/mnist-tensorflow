@@ -36,7 +36,8 @@ so you don't have to do much.
 You can download the data [here](http://yann.lecun.com/exdb/mnist/), if
 you want.
 
-For this examples the train data consists of 2000 points and the test data consists of 500 points. This is just to make the training phase faster, but feel free to change this if you want.
+For the examples in this repository we'll use all the available data and train
+the models with stochastic gradient descent (except 01-KNN).
 
 ## Let's do it!
 

@@ -29,6 +29,7 @@ b = tf.Variable(tf.zeros([10]), name='bias')
 with tf.name_scope('Model'):
     # test_data * W + b
     y = tf.matmul(x, W) + b
+    sm = tf.nn.softmax(y)
 
 y_ = tf.placeholder(tf.float32, [None, 10], name='real_class')
 
@@ -43,7 +44,7 @@ with tf.name_scope('TrainStep'):
 
 with tf.name_scope('Accuracy'):
     # evaluating the model
-    correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
+    correct_prediction = tf.equal(tf.argmax(sm, 1), tf.argmax(y_, 1))
     accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 # Create a summary to monitor loss tensor
