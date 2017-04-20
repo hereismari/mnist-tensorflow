@@ -8,8 +8,7 @@ so my plan is to put some of these tutorials together,
 evolving from a very simple model to a nice model that achieves
 99% accuracy in the test data.  
 
-In the end I'll also show how to make an android app with your model in
-which you can draw and see if the model gets your drawing right.  
+If you want to do an android app check [this link](https://github.com/mari-linhares/mnist-android-tensorflow)
 
 Have fun :party:!
 
@@ -25,8 +24,6 @@ For running the "tutorials" You'll need:
 * Numpy
 * [TensorFlow](https://www.tensorflow.org/install/)
 * Jupyter Notebook
-
-If you want to run it in your cellphone... [WIP]
 
 ### Getting the data
 
@@ -55,6 +52,6 @@ Thank you!
 2. [How to Make a TF Image Classifier, by Siraj Raval](https://github.com/llSourcell/How_to_make_a_tensorflow_image_classifier_LIVE)
 3. [TensorFlow Tutorials, by Hvass Labs ](https://github.com/Hvass-Labs/TensorFlow-Tutorials)
 4. [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/)
-5. [Getting_started with TensorFlow](https://www.tensorflow.org/get_started/get_started)
+5. [Getting started with TensorFlow](https://www.tensorflow.org/get_started/get_started)
 6. [Not another mnist tutorial with tensorflow](https://www.oreilly.com/learning/not-another-mnist-tutorial-with-tensorflow)
 7. [Training convolutional neural network for image classification](http://cv-tricks.com/tensorflow-tutorial/training-convolutional-neural-network-for-image-classification/)

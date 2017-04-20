@@ -120,6 +120,7 @@ with tf.name_scope('FinalLayer'):
     W_f = weight_variable([1024, 10], name='W_f')
     b_f = bias_variable([10], name='b_f')
     y_f = tf.matmul(drop_layer, W_f) + b_f
+    y_f_softmax = tf.nn.softmax(y_f)
 
 # loss
 loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_,
@@ -129,7 +130,7 @@ loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_,
 train_step = tf.train.AdamOptimizer(1e-4).minimize(loss)
 
 # accuracy
-correct_prediction = tf.equal(tf.argmax(y_f, 1), tf.argmax(y_, 1))
+correct_prediction = tf.equal(tf.argmax(y_f_softmax, 1), tf.argmax(y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 # Create a summary to monitor loss tensor
