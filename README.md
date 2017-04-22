@@ -10,11 +10,9 @@ evolving from a very simple model to a nice model that achieves
 
 If you want to do an android app check [this link](https://github.com/mari-linhares/mnist-android-tensorflow)
 
-Have fun :party:!
+Have fun!
 
-**To be clear: most of the original code is not mine (you can find the
-original source in this README file), but I'm making small changes were
-I think they fit.**
+**To be clear: the code present here was created following the tutorials in the links, please follow those for more details**
 
 ## Getting started
 
