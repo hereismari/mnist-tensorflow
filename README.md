@@ -1,4 +1,4 @@
-## Exploring MNIST with TensorFlow [WIP]
+## Exploring MNIST with TensorFlow
 
 ![mnist](http://rodrigob.github.io/are_we_there_yet/build/images/mnist.png?1363085077)
 
