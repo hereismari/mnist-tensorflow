@@ -8,11 +8,13 @@ so my plan is to put some of these tutorials together,
 evolving from a very simple model to a nice model that achieves
 99% accuracy in the test data.  
 
-If you want to do an android app check [this link](https://github.com/mari-linhares/mnist-android-tensorflow)
+[Here](https://github.com/mari-linhares/mnist-android-tensorflow) is an
+android app that I did as a final result of this exercise :smile:!
 
 Have fun!
 
-**To be clear: the code present here was created following the tutorials in the links, please follow those for more details**
+> Note: most of the code presented here is originally from the tutorials in the Reference
+  section, please follow those for more details
 
 ## Getting started
 
@@ -31,15 +33,13 @@ so you don't have to do much.
 You can download the data [here](http://yann.lecun.com/exdb/mnist/), if
 you want.
 
-For the examples in this repository we'll use all the available data and train
-the models with stochastic gradient descent (except 01-KNN).
+For the examples in this repository we'll use all the available
+data and train the models with stochastic gradient descent (except 01-KNN).
 
 ## Let's do it!
 
-To follow the "tutorials", just run: `jupyter notebook`.  
-
-If you want to check the code, just run manually `python <file name>.py`, also
-if you want to check TensorBoard you can! Just run `tensorboard --logdir=/tmp/tensorflow_log`
+To follow the tutorial samples, run: `jupyter notebook`.  
+If you want to check TensorBoard: run `tensorboard --logdir=/tmp/tensorflow_log`
 
 ## References
 
